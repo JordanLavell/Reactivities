@@ -35,7 +35,7 @@ namespace Application.Activities
                     for (var i = 0; i < 10; i++)
                     {
                         cancellationToken.ThrowIfCancellationRequested();
-                        _logger.LogInformation($"Task {i} has completed");
+                        // _logger.LogInformation($"Task {i} has completed");
                     }
                 }
                 catch (Exception ex) when (ex is TaskCanceledException)
